@@ -1,0 +1,61 @@
+[
+  {
+    "name": "id",
+    "dbType": "increments",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": true,
+    "inForm": false,
+    "inIndex": false
+  },
+  {
+    "name": "project_id",
+    "dbType": "integer:unsigned:foreign,projects,id",
+    "htmlType": "select",
+    "relation": "1tm,Project,project_id"
+  },
+  {
+    "name": "opetator_id",
+    "dbType": "integer:unsigned:foreign,operators,id",
+    "htmlType": "select",
+    "relation": "1tm,Operator,operator_id"
+  },
+  {
+    "name": "type",
+    "dbType": "enum:Ingreso,Egreso",
+    "htmlType": "radio,Ingreso,Egreso",
+    "validations": "required",
+    "searchable": true
+  },
+  {
+    "name": "date",
+    "dbType": "date",
+    "htmlType": "date",
+    "validations": "required",
+    "searchable": true
+  },
+  {
+    "name": "amount",
+    "dbType": "string:64",
+    "htmlType": "text",
+    "validations": "required",
+    "searchable": true
+  },
+  {
+    "name": "area",
+    "dbType": "string:64",
+    "htmlType": "text",
+    "validations": "required",
+    "searchable": true
+  },
+  {
+    "name": "rate",
+    "dbType": "string:64",
+    "htmlType": "text",
+    "validations": "required",
+    "searchable": false,
+    "nullable": true
+  }
+]

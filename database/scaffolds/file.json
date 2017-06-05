@@ -1,0 +1,66 @@
+[
+  {
+    "name": "id",
+    "dbType": "increments",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": true,
+    "inForm": false,
+    "inIndex": false
+  },
+  {
+    "name": "name",
+    "dbType": "string:64",
+    "htmlType": "text",
+    "validations": "required",
+    "searchable": true
+  },
+  {
+    "name": "path",
+    "dbType": "string:128",
+    "htmlType": "file",
+    "inForm": false,
+    "fillable": false,
+    "searchable": false
+  },
+  {
+    "name": "filetable_id",
+    "dbType": "integer:unsigned",
+    "htmlType": "",
+    "inForm": false,
+    "fillable": false,
+    "searchable": false
+  },
+  {
+    "name": "filetable_type",
+    "dbType": "string:128",
+    "htmlType": "",
+    "inForm": false,
+    "fillable": false,
+    "searchable": false
+  },
+  {
+    "name": "created_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+  },
+  {
+    "name": "updated_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+  }
+]

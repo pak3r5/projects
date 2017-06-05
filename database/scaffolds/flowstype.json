@@ -1,0 +1,20 @@
+[
+  {
+    "name": "id",
+    "dbType": "increments",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": true,
+    "inForm": false,
+    "inIndex": false
+  },
+  {
+    "name": "type",
+    "dbType": "enum:Ingreso,Egreso",
+    "htmlType": "radio,Ingreso,Egreso",
+    "validations": "required",
+    "searchable": true
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "name": "id",
+    "dbType": "increments",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": true,
+    "inForm": false,
+    "inIndex": false
+  },
+  {
+    "name": "rfc",
+    "dbType": "string:13",
+    "htmlType": "text",
+    "validations": "required",
+    "searchable": true
+  },
+  {
+    "name": "name",
+    "dbType": "string:64",
+    "htmlType": "text",
+    "validations": "required",
+    "searchable": true
+  },
+  {
+    "name": "type",
+    "dbType": "enum:Cliente,Contratista,Financiera,Proveedor,Socio",
+    "htmlType": "select,Cliente,Contratista,Financiera,Proveedor,Socio",
+    "validations": "required",
+    "searchable": true
+  },
+  {
+    "name": "street",
+    "dbType": "string:64",
+    "htmlType": "text",
+    "validations": "required",
+    "searchable": false
+  },
+  {
+    "name": "colony",
+    "dbType": "string:64",
+    "htmlType": "text",
+    "validations": "required",
+    "searchable": false
+  },
+  {
+    "name": "city",
+    "dbType": "string:64",
+    "htmlType": "text",
+    "validations": "required",
+    "searchable": false
+  },
+  {
+    "name": "state",
+    "dbType": "string:64",
+    "htmlType": "text",
+    "validations": "required",
+    "searchable": false
+  },
+  {
+    "name": "cp",
+    "dbType": "integer:5",
+    "htmlType": "text",
+    "validations": "required",
+    "searchable": false
+  },
+  {
+    "name": "country",
+    "dbType": "string:32",
+    "htmlType": "text",
+    "validations": "required",
+    "searchable": false
+  },
+  {
+    "name": "created_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+  },
+  {
+    "name": "updated_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+  }
+]

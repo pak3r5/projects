@@ -1,0 +1,30 @@
+[
+  {
+    "name": "id",
+    "dbType": "increments",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": true,
+    "inForm": false,
+    "inIndex": false
+  },
+  {
+    "name": "project_id",
+    "dbType": "integer:unsigned:foreign,projects,id",
+    "htmlType": "select",
+    "relation": "1tm,Project,project_id"
+  },
+  {
+    "name": "area",
+    "dbType": "string:32",
+    "htmlType": "text",
+    "validations": "required",
+    "searchable": true
+  },
+  {
+    "type": "relation",
+    "relation": "1tm,File"
+  }
+]

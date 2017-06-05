@@ -1,0 +1,59 @@
+[
+  {
+    "name": "id",
+    "dbType": "increments",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": true,
+    "inForm": false,
+    "inIndex": false
+  },
+  {
+    "name": "operator_id",
+    "dbType": "integer:unsigned:foreign,operators,id",
+    "htmlType": "select",
+    "relation": "1tm,Operator,operator_id"
+  },
+  {
+    "type": "relation",
+    "relation": "1tm,Operator,operator_id"
+  },
+  {
+    "name": "description",
+    "dbType": "string:254",
+    "htmlType": "text",
+    "validations": "required",
+    "searchable": false
+  },
+  {
+    "name": "cost",
+    "dbType": "float",
+    "htmlType": "text",
+    "validations": "required",
+    "searchable": false
+  },
+  {
+    "name": "created_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+  },
+  {
+    "name": "updated_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+  }
+]
